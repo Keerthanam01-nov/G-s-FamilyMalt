@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>G's Family Malt</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  margin:0;
+  background:#fafafa;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+  display:grid;
+  grid-template-columns:1fr 3fr 1fr;
+  align-items:center;
+  padding:15px 40px;
+  background:white;
+  border-bottom:2px solid #eee;
+}
+
+.header h1{
+  text-align:center;
+  color:#6a1b9a;
+  margin:0;
+}
+
+/* ================= NOTE BAR ================= */
+
+.note-bar{
+  background:#f3e5f5;
+  padding:12px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* ================= MAIN ================= */
+
+.main{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  min-height:600px;
+}
+
+/* ===== COLUMN COMMON ===== */
+
+.col{
+  padding:30px;
+  border-right:1px solid #eee;
+  background:white;
+}
+
+.col:last-child{
+  border-right:none;
+}
+
+/* ================= LEFT ================= */
+
+.left p{
+  line-height:1.8;
+  color:#444;
+}
+
+/* ================= CENTER ================= */
+
+.center h2{
+  color:#6a1b9a;
+  margin-top:0;
+}
+
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+button.submit{
+  width:100%;
+  padding:12px;
+  background:#6a1b9a;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-weight:600;
+  margin-top:10px;
+}
+
+.benefits{
+  margin-top:20px;
+  background:#f3e5f5;
+  padding:12px;
+  border-radius:8px;
+}
+
+/* ================= RIGHT ================= */
+
+.right video{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.habit{
+  background:#fafafa;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+.habit h3{
+  margin-top:0;
+  color:#6a1b9a;
+}
+
+.habit div{
+  margin:8px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+
+  <div></div>
+
+  <h1>G's Family Malt</h1>
+
+</div>
+
+<!-- NOTE -->
+<div class="note-bar">
+Healthy Homemade Malt – Crafted with Love ❤️
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- LEFT -->
+  <div class="col left">
+
+    <p>
+Inspired by women’s strength and crafted with mother’s care,
+our malt nourishes you with love in every sip.
+Because everyone deserves to feel strong and healthy.
+    </p>
+
+  </div>
+
+  <!-- CENTER -->
+  <div class="col center">
+
+    <h2>Place Preorder</h2>
+
+    <form action="/order" method="POST">
+
+      <input name="name" placeholder="Name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="phone" placeholder="Phone" required>
+      <input name="quantity" type="number" placeholder="Quantity" required>
+      <textarea name="address" placeholder="Address" required></textarea>
+
+      <button class="submit">Place Order</button>
+
+    </form>
+
+    <div class="benefits">
+      ✔ Boost Energy<br>
+      ✔ Improve Immunity<br>
+      ✔ 100% Natural
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="col right">
+
+    <video controls>
+      <source src="/static/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="habit">
+
+      <h3>Daily Habit Tracker</h3>
+
+      <div><input type="checkbox"> Drink Malt</div>
+      <div><input type="checkbox"> Exercise</div>
+      <div><input type="checkbox"> Water</div>
+      <div><input type="checkbox"> Sleep 7+ hrs</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
